@@ -16,7 +16,7 @@
 在z轴方向移动1（向前移动1个单位）。  
 
 ## 再次修改
-···C#
+```C#
     public float speed = 1.0f;
 
     void Update()
@@ -24,7 +24,7 @@
         transform.Translate(0, 0, speed * Time.deltaTime);
     }
 }
-···
+```
 代码逻辑：
 1.定义了一个值：“速度”，用来管控Object的移动速度倍率  
 2.deltaTime：确保了无论游戏以多少帧每秒运行，物体都以一致的速度移动  
