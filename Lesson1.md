@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
 **public float speed** 定义了一个值：“速度”，用来管控Object的移动速度倍率  
 **deltaTime：** 确保了无论游戏以多少帧每秒运行，物体都以一致的速度移动  
 
-### 3次修改
+## 按住WASD键，让Player奔跑
 ```C#
 public class PlayerMovement : MonoBehaviour
 {
@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
 **Vector3 move = new Vector3(moveX, 0, moveZ)：** 创建一个移动向量，X轴表示左右移动，Z轴表示前后移动   
 **transform.Translate(move * moveSpeed * Time.deltaTime, Space.World)：** 根据输入和移动速度更新玩家的位置   
 
-### 4次修改
+### 再次修改
 ```C#
 public class PlayerMovement : MonoBehaviour
 {
