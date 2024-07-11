@@ -72,3 +72,18 @@ public class PlayerMovement : MonoBehaviour
     }
 }
 ```
+## 按住空格键，让Player起跳
+```C#
+ void Start()
+    {
+        playerRb = GetComponent<Rigidbody>();
+    }
+ void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            playerRb.AddForce(Vector3.up * 10, ForceMode.Impulse);
+        }
+    }
+}
+```
