@@ -10,9 +10,9 @@ public class PlayerMovement : MonoBehaviour
 }
 ```
 ### 代码逻辑：  
-1.transform组件用来获取object的位置  
-2.Translate用来移动object的位置  
-3.（0，0，1）表示object的移动（x ,y ,z)  
+** transform：** 用来获取object的位置  
+** Translate：** 用来移动object的位置  
+（0，0，1）：表示object的移动（x ,y ,z)  
 在x轴方向移动0（不向左右移动），  
 在y轴方向移动0（不向上下移动），  
 在z轴方向移动1（向前移动1个单位）。  
